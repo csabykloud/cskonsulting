@@ -1,0 +1,95 @@
+/* CSKonsulting Styles */
+
+/* Smooth Transitions & Glassmorphism */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Language active button state */
+.lang-btn.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+.lang-btn:not(.active) {
+  color: #94a3b8;
+}
+
+.lang-btn:not(.active):hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Subtle glow animation */
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.04);
+  }
+}
+
+.animate-glow {
+  animation: subtle-pulse 6s ease-in-out infinite;
+}
+
+/* Full Justify Styling for all Cards, Windows, and Content Blocks */
+.text-justify,
+p.text-justify,
+[class*="rounded-2xl"] p,
+[class*="rounded-xl"] p,
+[class*="p-4"] p,
+[class*="p-5"] p,
+[class*="p-6"] p,
+[class*="p-7"] p,
+[class*="p-8"] p,
+.card p,
+.space-y-4 p,
+.space-y-5 p,
+.space-y-6 p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Maintain proper alignment for headings, buttons, and short labels */
+h1, h2, h3, h4, h5, h6,
+.lang-btn,
+nav a,
+button,
+label {
+  text-align: left;
+}
+
+.text-center h1,
+.text-center h2,
+.text-center h3,
+.text-center h4,
+.text-center span {
+  text-align: center;
+}
+
